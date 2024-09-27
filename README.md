@@ -22,8 +22,8 @@ Exercise No.4: Using splice() for Insertion, Deletion, and Update
 Objective: Implement functions using the splice() method.
 Instructions: Create four arrow functions:
 
-// pureInsert: Adds a registration at a specified position in the inscriptions array.
-// pureDeleteByPosition: Deletes a registration at a given position.
-// pureDeleteByID: Deletes a registration by its ID.
-// pureUpdateByPosition: Updates a registration at a specific position.
-// pureUpdateByID: Updates a registration by its ID.
+//** pureInsert: Adds a registration at a specified position in the inscriptions array. **//
+//** pureDeleteByPosition: Deletes a registration at a given position. **//
+//** pureDeleteByID: Deletes a registration by its ID. **//
+//** pureUpdateByPosition: Updates a registration at a specific position. **//
+//** pureUpdateByID: Updates a registration by its ID. **//
