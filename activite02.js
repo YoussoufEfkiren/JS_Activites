@@ -8,3 +8,18 @@ const personnes = [
     let NewList = personnes.filter((personne)=>personne.estMember).map((personne)=>personne.nom)
 
     console.log(NewList)
+
+//     function filtrer()
+// {
+//     let res=[];
+//     personnes.forEach(element => {
+//         if(element.estMember==true){
+//             res.push(element.nom)
+//         }
+//     });
+ 
+ 
+//     return res;
+ 
+// }
+// console.log(filtrer())
