@@ -9,24 +9,15 @@ jobs:
   build:
     name: Build and Analyze
     runs-on: windows-latest
-    
+
     steps:
-      # Checkout the code
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Ensures full repository history for accurate SonarQube analysis
+          fetch-depth: 0  # Ensures full repository history for accurate analysis
 
-      # Run SonarQube analysis
       - name: SonarQube Analysis
         uses: sonarsource/sonarqube-scan-action@v4
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-
-      # Optional: Check Quality Gate status (Uncomment to enforce it)
-      # - name: Quality Gate Check
-      #   uses: sonarsource/sonarqube-quality-gate-action@v1
-      #   timeout-minutes: 5
-      #   env:
-      #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
